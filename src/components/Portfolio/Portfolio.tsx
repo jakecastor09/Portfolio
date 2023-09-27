@@ -22,9 +22,9 @@ const Portfolio = () => {
             <h1 className='text-2xl font-bold  text-primary md:text-3xl lg:text-4xl'>
               Spirals
             </h1>
-            <h3 className='font-bold text-white mt-2 md:text-lg lg:text-xl'>
+            <p className='font-bold text-white mt-2 md:text-lg lg:text-xl'>
               Admin Web App and POS Mobile App
-            </h3>
+            </p>
             <p className='text-light leading-loose mt-1 lg:text-lg'>
               The full-stack project that I developed for Spiral business during
               my college years. The project consists of two separate
