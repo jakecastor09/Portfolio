@@ -10,7 +10,7 @@ const Portfolio = () => {
     <section id='portfolio' className='mt-12'>
       <Container>
         <PageHeader title='My Portfolio' />
-        <div className='mt-16 relative p-4 w-full mx-auto bg-bgDark2 md:py-12 rounded-xl'>
+        <div className='mt-16 relative p-4 w-full mx-auto bg-bgDark2 md:py-12 rounded-xl xl:mt-24'>
           <img src={spiralAdmin} alt='' className='w-full mx-auto md:hidden' />
           <img
             src={spiralAdmin2}
