@@ -4,7 +4,7 @@ interface Props {
 const PageHeader = ({ title }: Props) => {
   return (
     <div>
-      <div className='flex items-center space-x-1 justify-center lg:space-x-2'>
+      <div className='flex items-center space-x-1 relative justify-center lg:space-x-2'>
         <div className='rounded-full w-4 h-4 bg-primary lg:h-5 lg:w-5'></div>
         <div className='rounded-full w-4 h-4 bg-secondary lg:h-5 lg:w-5'></div>
         <div className='rounded-full w-4 h-4 bg-tertiary lg:h-5 lg:w-5'></div>

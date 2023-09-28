@@ -9,7 +9,7 @@ const ServiceItem = ({ image, title, desc }: Props) => {
       <img
         src={image}
         alt=''
-        className='w-14 h-14 mb-2 lg:w-16 lg:h-16 xl:w-18 xl:h-18'
+        className='w-14 h-14 mb-2 lg:w-16 lg:h-16 xl:w-20 xl:h-20'
       />
       <h1 className='font-bold  text-lg lg:text-lg xl:text-2xl xl:max-w-xs xl:mt-2'>
         {title}
