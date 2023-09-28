@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         sans: ['ProximaNova', 'sans-serif'],
       },
+
       colors: {
         primary: '#16F8B6',
         secondary: '#6F61C0',
