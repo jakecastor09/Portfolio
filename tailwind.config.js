@@ -14,6 +14,7 @@ export default {
         light: '#A6ADBA',
         darkYellow: '#382800',
         bgDark: '#15191E',
+        bgDark2: '#191E24',
       },
     },
   },
