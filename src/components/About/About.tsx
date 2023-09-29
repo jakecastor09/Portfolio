@@ -3,7 +3,7 @@ import PageHeader from '../PageHeader/PageHeader';
 import profile1 from '../../assets/profile-1-min.png';
 import profile2 from '../../assets/profile-2-min.png';
 import TechnologiesItem from '../Technologies/TechnologiesItem';
-import TechonologiesItems from '../Technologies/TechonologiesItems';
+import TechnologiesItems from '../Technologies/TechnologiesItems';
 
 const About = () => {
   return (
@@ -34,14 +34,14 @@ const About = () => {
                 setting.
               </p>
               <div className='max-w-sm mx-auto md:m-0'>
-                <TechonologiesItems>
+                <TechnologiesItems>
                   <TechnologiesItem name='HTML' />
                   <TechnologiesItem name='CSS' />
                   <TechnologiesItem name='Javascript' />
                   <TechnologiesItem name='Typescript' />
                   <TechnologiesItem name='Tailwind' />
                   <TechnologiesItem name='React' />
-                </TechonologiesItems>
+                </TechnologiesItems>
               </div>
             </div>
           </div>
