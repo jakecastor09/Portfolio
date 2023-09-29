@@ -2,6 +2,9 @@ import nestVista2 from '../../assets/nestVista-2-min.png';
 import nestVista from '../../assets/nestVista1.png';
 import spiralAdmin2 from '../../assets/spirals-2-min.png';
 import spiralAdmin from '../../assets/spirals-min.png';
+import agriApp from '../../assets/agri-app-min.png';
+import agriApp2 from '../../assets/agri-app2-min.png';
+
 import Container from '../Container/Container';
 import PageHeader from '../PageHeader/PageHeader';
 
@@ -59,11 +62,34 @@ const Portfolio = () => {
           />
           <div className='md:w-1/2 xl:flex xl:justify-center'>
             <TechnologiesContainer>
-              <TechnologiesTitle title={'NestVista'} />
+              <TechnologiesTitle title={'Static Website'} />
               <TechnologiesItems>
                 <TechnologiesItem name='React' />
                 <TechnologiesItem name='Typescript' />
                 <TechnologiesItem name='Tailwind' />
+              </TechnologiesItems>
+            </TechnologiesContainer>
+          </div>
+        </PortfolioDetailsContainer>
+
+        {/* //3 */}
+
+        <PortfolioImage smImage={agriApp2} midImage={agriApp} />
+        <PortfolioDetailsContainer>
+          <PortfolioDetails
+            title={'Agriculture App in Tabon'}
+            subTitle={'School Project'}
+            description='This is the project I created while learning Tailwind CSS. It is a multipage project that includes various layouts, allowing me to practice using Flexbox and Grid and become more familiar with Tailwind.'
+          />
+          <div className='md:w-1/2 xl:flex xl:justify-center'>
+            <TechnologiesContainer>
+              <TechnologiesTitle title={'Mobile App'} />
+              <TechnologiesItems>
+                <TechnologiesItem name='HTML' />
+                <TechnologiesItem name='CSS' />
+                <TechnologiesItem name='Ionic' />
+                <TechnologiesItem name='Angular' />
+                <TechnologiesItem name='Firebase' />
               </TechnologiesItems>
             </TechnologiesContainer>
           </div>
