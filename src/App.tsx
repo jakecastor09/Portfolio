@@ -9,6 +9,7 @@ import useMenuStore from './hooks/MenuStore';
 
 const App = () => {
   const isOpen = useMenuStore(s => s.isOpen);
+
   return (
     <div className='relative'>
       {isOpen && <MobileMenu />}

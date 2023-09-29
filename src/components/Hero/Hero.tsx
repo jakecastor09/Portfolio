@@ -2,6 +2,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import profile2 from '../../assets/jake-profile.png';
 import profile from '../../assets/profile.png';
 import Container from '../Container/Container';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
@@ -14,18 +15,56 @@ const Hero = () => {
 
             <div className='md:hidden bottom-8 right-28 w-[100px] h-[100px] md:w-[300px] md:h-[300px] bg-secondary rounded-full absolute filter blur-3xl  opacity-30'></div>
             <div className='md:hidden top-24 left-28 w-[100px] h-[100px] md:w-[300px] md:h-[300px] bg-primary rounded-full absolute filter blur-3xl opacity-30'></div>
-            <img
+            <motion.img
               src={profile}
               alt='jake'
               className='max-w-[288px] mx-auto md:hidden relative z-10'
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+                scale: {
+                  type: 'spring',
+                  damping: 5,
+                  stiffness: 100,
+                  restDelta: 0.001,
+                },
+              }}
             />
-            <img
+            <motion.img
               src={profile2}
               alt='jake'
               className='lg:max-w-[348px]  xl:max-w-[440px] relative z-10 mx-auto  hidden md:block'
+              initial={{ opacity: 0, scale: 0.4 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1],
+                scale: {
+                  type: 'spring',
+                  damping: 6,
+                  stiffness: 100,
+                  restDelta: 0.001,
+                },
+              }}
             />
           </div>
-          <div className='text-center mt-4 md:text-left md:w-1/2'>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.4 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.3,
+              ease: [0, 0.71, 0.2, 1],
+              scale: {
+                type: 'spring',
+                damping: 6,
+                stiffness: 100,
+                restDelta: 0.001,
+              },
+            }}
+            className='text-center mt-4 md:text-left md:w-1/2'
+          >
             <h1 className='text-white text-lg font-semibold leading lg:text-xl xl:text-2xl'>
               👋🏻 Hi! I'm Jake Castor
             </h1>
@@ -43,7 +82,7 @@ const Hero = () => {
                 <AiOutlineArrowRight />
               </span>
             </button>
-          </div>
+          </motion.div>
         </div>
       </Container>
     </section>

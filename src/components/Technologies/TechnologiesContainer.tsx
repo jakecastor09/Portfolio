@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
 
 interface Props {
@@ -6,7 +7,16 @@ interface Props {
 
 const TechnologiesContainer = ({ children }: Props) => {
   return (
-    <div className='mt-4 h-fit  bg-trasparent border border-white rounded-xl p-4 md:mt-0 xl:w-fit xl:p-6'>
+    <motion.div
+      className='mt-4 h-fit  bg-trasparent border border-white rounded-xl p-4 md:mt-0 xl:w-fit xl:p-6'
+      initial={{ opacity: 0, x: 400 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.5,
+        x: { duration: 0.8 },
+      }}
+    >
       <div className='flex items-center space-x-1  lg:space-x-2'>
         <div className='rounded-full w-2 h-2 bg-primary lg:h-3 lg:w-3'></div>
         <div className='rounded-full w-2 h-2 bg-secondary lg:h-3 lg:w-3'></div>
@@ -14,7 +24,7 @@ const TechnologiesContainer = ({ children }: Props) => {
         <h1 className='text-white text-xs lg:text-md'>- Technologies I used</h1>
       </div>
       {children}
-    </div>
+    </motion.div>
   );
 };
 
