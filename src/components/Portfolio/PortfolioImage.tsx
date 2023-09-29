@@ -6,21 +6,24 @@ interface Props {
 }
 const PortfolioImage = ({ smImage, midImage }: Props) => {
   return (
-    <div className='mt-16 relative overflow-hidden p-4 w-full mx-auto bg-bgDark2 md:py-12 rounded-xl xl:mt-24'>
+    <motion.div
+      className='mt-16 relative overflow-hidden p-4 w-full mx-auto bg-bgDark2 md:py-12 rounded-xl xl:mt-28'
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.3,
+        scale: {
+          type: 'spring',
+        },
+      }}
+    >
       <img src={smImage} alt='' className='w-full mx-auto md:hidden' />
-      <motion.img
+      <img
         src={midImage}
         alt=''
         className='w-full  mx-auto hidden md:block md:w-4/5'
-        initial={{ opacity: 0, y: 400 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{
-          duration: 0.5,
-          y: { duration: 0.8 },
-        }}
       />
-    </div>
+    </motion.div>
   );
 };
 

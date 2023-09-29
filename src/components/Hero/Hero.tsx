@@ -19,16 +19,12 @@ const Hero = () => {
               src={profile}
               alt='jake'
               className='max-w-[288px] mx-auto md:hidden relative z-10'
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               transition={{
                 duration: 0.3,
-                ease: [0, 0.71, 0.2, 1.01],
                 scale: {
                   type: 'spring',
-                  damping: 5,
-                  stiffness: 100,
-                  restDelta: 0.001,
                 },
               }}
             />
@@ -36,31 +32,23 @@ const Hero = () => {
               src={profile2}
               alt='jake'
               className='lg:max-w-[348px]  xl:max-w-[440px] relative z-10 mx-auto  hidden md:block'
-              initial={{ opacity: 0, scale: 0.4 }}
-              animate={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               transition={{
                 duration: 0.3,
-                ease: [0, 0.71, 0.2, 1],
                 scale: {
                   type: 'spring',
-                  damping: 6,
-                  stiffness: 100,
-                  restDelta: 0.001,
                 },
               }}
             />
           </div>
           <motion.div
-            initial={{ opacity: 0, scale: 0.4 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{
               duration: 0.3,
-              ease: [0, 0.71, 0.2, 1],
               scale: {
                 type: 'spring',
-                damping: 6,
-                stiffness: 100,
-                restDelta: 0.001,
               },
             }}
             className='text-center mt-4 md:text-left md:w-1/2'

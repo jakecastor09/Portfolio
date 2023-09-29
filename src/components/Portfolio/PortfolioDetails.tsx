@@ -9,12 +9,10 @@ const PortfolioDetails = ({ title, subTitle, description }: Props) => {
   return (
     <motion.div
       className='md:w-1/2'
-      initial={{ opacity: 0, x: -400 }}
+      initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
       transition={{
-        duration: 0.5,
-        x: { duration: 0.8 },
+        x: { duration: 0.4 },
       }}
     >
       <h1 className='text-2xl font-bold  text-primary md:text-3xl lg:text-4xl xl:text-5xl'>

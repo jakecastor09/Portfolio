@@ -4,6 +4,7 @@ import profile1 from '../../assets/profile-1-min.png';
 import profile2 from '../../assets/profile-2-min.png';
 import TechnologiesItem from '../Technologies/TechnologiesItem';
 import TechnologiesItems from '../Technologies/TechnologiesItems';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
@@ -12,15 +13,29 @@ const About = () => {
         <PageHeader title={'About Me'} />
         <div className='mt-16 xl:mt-24 md:py-16 lg:py-20 xl:py-24'>
           <div className='flex flex-col text-white  text-center md:flex-row md:text-left md:items-center'>
-            <div className='md:w-1/2 '>
+            <motion.div
+              className='md:w-1/2 '
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                x: { duration: 0.4 },
+              }}
+            >
               <img src={profile1} alt='' className='mx-auto md:hidden' />
               <img
                 src={profile2}
                 alt=''
                 className=' hidden md:block w-[250px] lg:w-[320px] mx-auto'
               />
-            </div>
-            <div className='md:w-1/2'>
+            </motion.div>
+            <motion.div
+              className='md:w-1/2'
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                x: { duration: 0.4 },
+              }}
+            >
               <h1 className='font-bold text-2xl mt-4 md:m-0 md:text-3xl lg:text-5xl'>
                 Hey, <span className='text-primary'>I'm Jake</span>
               </h1>
@@ -43,7 +58,7 @@ const About = () => {
                   <TechnologiesItem name='React' />
                 </TechnologiesItems>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </Container>

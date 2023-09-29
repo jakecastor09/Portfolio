@@ -11,7 +11,7 @@ const App = () => {
   const isOpen = useMenuStore(s => s.isOpen);
 
   return (
-    <div className='relative'>
+    <div className='relative overflow-hidden'>
       {isOpen && <MobileMenu />}
       <Navbar />
       <Hero />
