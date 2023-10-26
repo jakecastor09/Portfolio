@@ -79,7 +79,7 @@ const Portfolio = () => {
           <PortfolioDetails
             title={'Agriculture App in Tabon'}
             subTitle={'School Project'}
-            description='This is the project I created while learning Tailwind CSS. It is a multipage project that includes various layouts, allowing me to practice using Flexbox and Grid and become more familiar with Tailwind.'
+            description='This is the project I developed, A mobile application for Tabon Nueva Ecija, focusing on agricultural education. Users can select crops and livestock they want to learn about, post problems that others can comment on, share farming methods with the community, and read other farming methods.'
           />
           <div className='md:w-1/2 xl:flex xl:justify-center'>
             <TechnologiesContainer>
